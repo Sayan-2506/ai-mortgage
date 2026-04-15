@@ -1,0 +1,6 @@
+####################shadcn
+npm install class-variance-authority clsx tailwind-merge
+npm install radix-vue lucide-vue-next
+npx shadcn-vue@latest init
+npx shadcn-vue@latest add button
+####################shadcn
