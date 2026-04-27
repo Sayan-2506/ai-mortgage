@@ -16,6 +16,7 @@ import {
 export default defineEventHandler(async (event) => {
   const { message, history = [] } = await readBody(event);
   const config = useRuntimeConfig();
+  console.log("DEBUGGGGGG: OpenAI URL is ->", config.openaiKey);
   const client = new OpenAI({ apiKey: config.openaiKey });
 
   const historyMessages = history.slice(-10).map((m: any) => ({

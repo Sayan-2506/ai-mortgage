@@ -14,10 +14,11 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    directusToken: process.env.DIRECTUS_TOKEN,
-    openaiKey: process.env.OPENAI_API_KEY,
+    directusToken: '',
+    openaiKey: '',
+    directusUrl: '',
     public: {
-      directusUrl: process.env.DIRECTUS_URL,
+      directusUrl: '',
     },
   },
 
