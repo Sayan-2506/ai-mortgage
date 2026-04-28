@@ -5,7 +5,7 @@ const sections = [
     {
         icon: 'mdi:information',
         title: '1. Дисклеймер',
-        description: 'Ai-Ipoteka.kz является информационным сервисом, предоставляющим справочные данные об ипотечных программах банков Республики Казахстан.',
+        description: 'Ai-Ipoteka является информационным сервисом, предоставляющим справочные данные об ипотечных программах банков Республики Казахстан.',
         items: [
             'Сайт не является банком и не выдает кредиты.',
             'Все представленные расчеты носят ознакомительный характер.',
@@ -58,14 +58,15 @@ const sections = [
         description: undefined,
         items: [
             'Лицензия: Информационный ресурс. Регистрация не требуется.',
-            'Контакты: Если у вас возникли вопросы по поводу данных, напишите нам на info@ai-ipoteka.kz.',
+            'Контакты: Если у вас возникли вопросы по поводу данных, напишите нам на info@ai-ipoteka.',
         ]
     },
 ]
 
 useSeoMeta({
-    title: 'Политика конфиденциальности — Ai-Ipoteka.kz',
-    description: 'Политика конфиденциальности и условия использования сервиса Ai-Ipoteka.kz'
+    title: 'Политика конфиденциальности — Ai-Ipoteka',
+    ogImage: 'https://ai-help.asia/images/og-logo.png',
+    description: 'Политика конфиденциальности и условия использования сервиса Ai-Ipoteka'
 })
 </script>
 
@@ -119,10 +120,10 @@ useSeoMeta({
                         <p class="text-white/50 text-sm mb-4">Если у вас возникли вопросы по поводу данных — напишите
                             нам
                         </p>
-                        <a href="mailto:info@ai-ipoteka.kz"
+                        <a href="mailto:info@ai-ipoteka"
                             class="inline-flex items-center gap-2 px-6 py-2.5 bg-emerald-400 hover:bg-emerald-300 text-slate-900 font-semibold text-sm rounded-xl transition-colors">
                             <Icon name="mdi:email" size="18" />
-                            info@ai-ipoteka.kz
+                            info@ai-ipoteka
                         </a>
                     </div>
 

@@ -15,7 +15,6 @@
 
                     <text x="70" y="48" font-family="Arial, sans-serif" font-weight="800" font-size="28" fill="#94A3B8">
                         Ai-<tspan fill="url(#ai_grad)">Ipoteka</tspan>
-                        <tspan fill="#94A3B8" font-size="20">.kz</tspan>
                     </text>
 
                     <text x="70" y="65" font-family="Arial, sans-serif" font-size="10" fill="#94A3B8"

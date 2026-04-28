@@ -41,9 +41,8 @@ const { mortgage } = defineProps<{
                     <div class="text-3xl font-bold text-emerald-400">{{ formatPercent(mortgage.rate_min) }}</div>
 
                     <div v-if="mortgage.rate_max !== mortgage.rate_min" class="flex flex-col items-center">
-                        <span>{{ t('mortgage_card.rate_to') }}</span><span
-                            class="text-3xl font-bold text-emerald-400">{{
-                                formatPercent(mortgage.rate_max) }}</span>
+                        <Icon name="mdi:arrow-down" size="18" /><span class="text-3xl font-bold text-emerald-400">{{
+                            formatPercent(mortgage.rate_max) }}</span>
                     </div>
                 </div>
 
@@ -56,12 +55,12 @@ const { mortgage } = defineProps<{
             <div class="space-y-4">
                 <div>
                     <div class="text-sm text-white/60">{{ t('mortgage_card.loan_amount') }}</div>
-                    <div class="text-lg font-medium">{{ t('mortgage_card.rate_to') }} {{
+                    <div class="text-lg font-medium">~ {{
                         mortgage.max_loan_amount.toLocaleString() }} ₸</div>
                 </div>
                 <div>
                     <div class="text-sm text-white/60">{{ t('mortgage_card.loan_term') }}</div>
-                    <div class="text-lg font-medium">{{ t('mortgage_card.rate_to') }} {{ mortgage.max_term_months }} {{
+                    <div class="text-lg font-medium">~ {{ mortgage.max_term_months }} {{
                         t('mortgage_card.months') }}
                     </div>
                 </div>

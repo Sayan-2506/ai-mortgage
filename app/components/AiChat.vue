@@ -21,32 +21,12 @@ async function submit() {
     <div class="fixed bottom-6 right-6 z-50">
 
         <!-- Кнопка открытия -->
-        <button @click="isOpen = !isOpen" :class="{ 'animate-pulse': !isOpen }"
-            class="w-16 h-16 rounded-full flex hover:bg-blue-300 items-center justify-center shadow-lg transition-colors">
-            <svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="orb" x1="20%" y1="20%" x2="80%" y2="80%">
-                        <stop offset="0%" stop-color="#60a5fa" />
-                        <stop offset="50%" stop-color="#a78bfa" />
-                        <stop offset="100%" stop-color="#c084fc" />
-                    </linearGradient>
-                </defs>
-
-                <!-- внешний орбитальный круг -->
-                <circle cx="45" cy="45" r="38" fill="none" stroke="url(#orb)" stroke-width="8" opacity="0.85" />
-
-                <!-- внутренний круг -->
-                <circle cx="45" cy="45" r="22" fill="#1e293b" />
-
-                <!-- AI символ -->
-                <text x="45" y="58" font-family="system-ui,sans-serif" font-size="36" font-weight="900" fill="white"
-                    text-anchor="middle">AI</text>
-
-                <!-- маленькие точки-орбиты -->
-                <circle cx="45" cy="12" r="4" fill="#a78bfa" />
-                <circle cx="12" cy="45" r="4" fill="#60a5fa" />
-                <circle cx="78" cy="45" r="4" fill="#c084fc" />
-            </svg>
+        <button @click="isOpen = !isOpen"
+            class="w-16 h-16 rounded-full flex bg-sky-300 items-center justify-center shadow-lg transition-colors">
+            <img src="/images/robo-logo.svg" alt="ai-chat" class="w-10 h-10 relative" />
+            <span class="absolute top-1 right-1 -mt-1 -mr-1 flex size-3"><span
+                    class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span
+                    class="relative inline-flex size-3 rounded-full bg-emerald-400"></span></span>
         </button>
 
         <!-- Чат -->

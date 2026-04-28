@@ -1,18 +1,18 @@
 export const calculateMortgageData = (
-  amount: number,
-  period: number,
-  annualRate: number,
+  amount: number | undefined,
+  period: number | undefined,
+  annualRate: number | undefined,
 ) => {
-  if (period <= 0 || amount <= 0) return { monthly: 0, totalInterest: 0 };
+  const a = amount ?? 0;
+  const p = period ?? 0;
+  const r = annualRate ?? 0;
 
-  const monthlyRate = annualRate / 12;
+  if (p <= 0 || a <= 0) return { monthly: 0, interest: 0 };
 
-  // Формула аннуитетного коэффициента: K = (i * (1 + i)^n) / ((1 + i)^n - 1)
-  const power = Math.pow(1 + monthlyRate, period);
-  const monthlyPayment = (amount * (monthlyRate * power)) / (power - 1);
-
-  const totalPaid = monthlyPayment * period;
-  const totalInterest = totalPaid - amount;
+  const monthlyRate = r / 12;
+  const power = Math.pow(1 + monthlyRate, p);
+  const monthlyPayment = (a * (monthlyRate * power)) / (power - 1);
+  const totalInterest = monthlyPayment * p - a;
 
   return {
     monthly: Math.round(monthlyPayment),
@@ -42,5 +42,5 @@ export const getTotalInterest = (
 };
 
 export const formatRatePercent = (value: number): string => {
-  return parseFloat(value.toString()).toString() + "%";
+  return parseFloat(value.toString()).toString();
 };

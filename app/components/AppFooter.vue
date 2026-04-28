@@ -62,13 +62,14 @@ async function subscribe() {
                 <!-- Brand -->
                 <div class="max-w-sm">
                     <div>
-                        <span class="text-emerald-400 text-2xl">🤖</span>
-                        <span class="font-bold text-lg tracking-tight">AI-Mortgage.kz</span>
+                        <NuxtLink to="/">
+                            <img src="/images/logo.svg" alt="AI-Ipoteka" />
+                        </NuxtLink>
                     </div>
                     <p class="text-white/50 text-sm leading-relaxed mb-6">
                         {{ t('footer.ai_info') }}
                     </p>
-                    <p class="text-white/30 text-xs">© {{ year }} AI-Mortgage.kz.<br>{{ t('footer.copyright') }}</p>
+                    <p class="text-white/30 text-xs">© {{ year }} AI-Ipoteka<br>{{ t('footer.copyright') }}</p>
                 </div>
 
                 <!-- Подписка -->

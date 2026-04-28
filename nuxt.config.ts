@@ -14,11 +14,10 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    directusToken: '',
-    openaiKey: '',
-    directusUrl: '',
+    directusToken: "",
+    openaiKey: "",
     public: {
-      directusUrl: '',
+      directusUrl: "",
     },
   },
 
@@ -35,8 +34,8 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://ai-ipoteka.kz",
-    name: "Ai-Ipoteka.kz",
+    url: "https://ai-help.asia",
+    name: "ai-help.asia",
   },
 
   sitemap: {
@@ -49,12 +48,18 @@ export default defineNuxtConfig({
       meta: [
         { name: "theme-color", content: "#0f1117" },
         { name: "robots", content: "index, follow" },
-        { property: "og:site_name", content: "Ai-Ipoteka.kz" },
+        { property: "og:site_name", content: "ai-help.asia" },
         { property: "og:type", content: "website" },
         { property: "og:locale", content: "ru_RU" },
-        { property: "og:image", content: "/public/images/og-logo.svg" },
+        {
+          property: "og:image",
+          content: "https://ai-help.asia/images/og-logo.png",
+        },
       ],
-      link: [{ rel: "canonical", href: "https://ai-ipoteka.kz" }],
+      link: [
+        { rel: "canonical", href: "https://ai-help.asia" },
+        { rel: "icon", type: "image/svg+xml", href: "/images/head-icon.svg" },
+      ],
     },
   },
 });

@@ -17,7 +17,8 @@ const config = useRuntimeConfig();
 const { data: banks, pending: pendingBanks } = await useFetch<Bank[]>('/api/banks')
 
 useSeoMeta({
-    title: 'Банки — Ai-Ipoteka.kz',
+    title: 'Банки — Ai-Ipoteka',
+    ogImage: 'https://ai-help.asia/images/og-logo.png',
     description: 'Подробная информация о банках'
 })
 

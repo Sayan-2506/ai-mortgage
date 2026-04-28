@@ -49,7 +49,8 @@ const advantages = [
 
 watchEffect(() => {
     useSeoMeta({
-        title: 'О сервисе — Ai-Ipoteka.kz',
+        title: 'О сервисе — Ai-Ipoteka',
+        ogImage: 'https://ai-help.asia/images/og-logo.png',
         description: 'Первый в Казахстане сервис подбора ипотеки с искусственным интеллектом'
     })
 })
@@ -81,7 +82,7 @@ watchEffect(() => {
                             <Icon name="mdi:robot" size="20" class="text-emerald-400" />
                         </div>
                         <div>
-                            <p class="text-white text-sm font-semibold">Ai-Ipoteka.kz</p>
+                            <p class="text-white text-sm font-semibold">Ai-Ipoteka</p>
                             <p class="text-white/40 text-xs">{{ t('about.this_is') }}</p>
                         </div>
                     </div>

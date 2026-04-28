@@ -71,12 +71,12 @@ const tabs = computed(() => [
 
 useSeoMeta({
     title: () => mortgage.value
-        ? `${mortgage.value.program_name} от ${mortgage.value.bank?.name} — Ai-Ipoteka.kz`
+        ? `${mortgage.value.program_name} от ${mortgage.value.bank?.name} — Ai-Ipoteka`
         : 'Загрузка ипотечной программы...',
     description: () => mortgage.value
         ? `Ипотечная программа ${mortgage.value.program_name}. Ставка от ${mortgage.value.rate_min}%.`
         : '',
-    ogImage: () => mortgage.value?.bank?.logo || '/default-share.png'
+    ogImage: () => mortgage.value?.bank?.logo || 'https://ai-help.asia/images/og-logo.png'
 })
 
 if (import.meta.client) {

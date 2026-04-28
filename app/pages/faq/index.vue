@@ -15,7 +15,8 @@ const filteredItems = computed(() =>
 
 watchEffect(() => {
     useSeoMeta({
-        title: 'Ипотечный словарь — Ai-Ipoteka.kz',
+        title: 'Ипотечный словарь — Ai-Ipoteka',
+        ogImage: 'https://ai-help.asia/images/og-logo.png',
         description: 'Всё что нужно знать перед ипотекой: ГЭСВ, аннуитет, первичный рынок, страхование и другие термины простым языком'
     })
 })
